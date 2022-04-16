@@ -1,0 +1,13 @@
+#flexContainer {
+  display: block;
+}
+
+@media only screen and (min-width: 1024px) {
+  #flexContainer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #definition {
+    margin-left: 2rem;
+  }
+}
