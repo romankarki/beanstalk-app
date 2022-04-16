@@ -86,7 +86,7 @@ const Search = () => {
                             <div>
                                 <h3>Top Results</h3>
                                 <div style={{margin:"1rem 0rem"}}>
-                                    <Link to={"/summary?code="+data["top-result"]["cm-code"]} style={{textDecoration:"none",color:"black"}}>
+                                    <Link to={"/details?code="+data["top-result"]["cm-code"]} style={{textDecoration:"none",color:"black"}}>
                                         <TopResultCard key={data["top-result"]["cm-code"]}  code={data["top-result"]["cm-code"]} title={data["top-result"]["title"]} />
                                     </Link>
                                 </div>
@@ -102,7 +102,7 @@ const Search = () => {
                                 {data["top-result"]?.map(each=>{
                                     return (
                                         <div style={{margin:"1rem 0rem"}}>
-                                            <Link to={"/summary?code="+each["cm-code"]} style={{textDecoration:"none",color:"black"}}>
+                                        <Link to={"/details?code="+each["cm-code"]} style={{textDecoration:"none",color:"black"}}>
                                                 <TopResultCard key={each["cm-code"]}  code={each["cm-code"]} title={each["title"]} />
                                             </Link>
                                         </div>
