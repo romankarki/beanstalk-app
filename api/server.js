@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../search-app/build')));
 
 
-app.get('/', (req,res) => {
+app.get('/*', (req,res) => {
   res.sendFile(path.join(__dirname, '../search-app/build/index.html'));
 });
 
